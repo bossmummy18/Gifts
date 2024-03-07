@@ -1,0 +1,79 @@
+*{
+    font-family: 'Impact';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5B0888;
+}
+
+.toolbar{
+    background: #713ABE;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.toolbar button{
+    border: none;
+    background-color: transparent;
+}
+
+img{
+    height: 75px;
+    width: 75px;
+}
+
+#follow{
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.orders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.orders button{
+    background: #9D76C1;
+    border-radius: 20px;
+    border: none;
+    padding: 40px;
+}
+
+.orders div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background: #16FF00;
+    border-radius: 20px;
+    border: none;
+    width: 155px;
+    height: 20px;
+}
+
+#time{
+    background: #16FF00;
+    border-radius: 20px;
+    border: none;
+    width: 495px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+#score{
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
