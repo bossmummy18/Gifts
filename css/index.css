@@ -8,7 +8,7 @@
 body{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -56,7 +56,6 @@ a i:before{
     background: #27282c;
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
-    scale: 2;
 }
 
 a:hover i:before{
@@ -74,7 +73,6 @@ a i:after{
     background: #27282c;
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
-    scale: 2;
 }
 
 a:hover i:after{
@@ -97,7 +95,6 @@ a, .name{
     font-weight: 400;
     padding: 10px 30px;
     transition: 0.5s;
-    scale: 2;
 }
 
 .name:hover{
@@ -111,6 +108,10 @@ a, .name{
     position: absolute;
     inset: 2px;
     background: transparent;
+}
+
+a, a i:before, a i:after, .name{
+    scale: 1;
 }
 
 /*@media only screen and (min-width: 768px){
