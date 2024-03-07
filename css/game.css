@@ -1,5 +1,6 @@
 *{
     font-family: 'Impact';
+    scale: 0.85;
 }
 
 body{
@@ -15,7 +16,7 @@ body{
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    gap: 10px;
     padding: 20px;
     align-items: center;
     margin-bottom: 50px;
@@ -40,7 +41,7 @@ img{
 .orders{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    gap: 15px;
 }
 
 .orders button{
@@ -53,7 +54,7 @@ img{
 .orders div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    gap: 15px;
     background: #16FF00;
     border-radius: 20px;
     border: none;
@@ -76,4 +77,10 @@ img{
     font-size: 3em;
     letter-spacing: 0.1em;
     font-weight: 400;
+}
+
+@media only screen and (min-width: 768px){
+    *{
+        scale: 1;
+    }
 }

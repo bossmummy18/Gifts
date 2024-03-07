@@ -109,17 +109,3 @@ a, .name{
     inset: 2px;
     background: transparent;
 }
-
-/*a, a i:before, a i:after, .name{
-    scale: 1;
-}*/
-
-/*@media only screen and (min-width: 768px){
-    body{
-        gap: 50px;
-    }
-
-    a, a i:before, a i:after, .name{
-        scale: 1;
-    }
-}*/
