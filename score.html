@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <p class="name" style="--clr:#1e9bff; font-size: 2.5em;"><span id="score"></span></p>
+    <a style="--clr:#ff1867" href="index.html"><span>BACK</span><i></i></a>
+
+    <script>
+      const searchParams = new URLSearchParams(window.location.search);
+      document.getElementById('score').innerHTML = searchParams.get('score');
+    </script>
+</body>
+</html>
