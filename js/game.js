@@ -27,9 +27,11 @@ $(document).mousemove(function(e) {
     });
 });
 
-gsap.fromTo('#time1', {width: 155}, {width: 0, duration: 10, ease: 'none'});
-gsap.fromTo('#time2', {width: 155}, {width: 0, duration: 10, ease: 'none'});
-gsap.fromTo('#time3', {width: 155}, {width: 0, duration: 10, ease: 'none'});
+let max_time = 10;
+
+gsap.fromTo('#time1', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
+gsap.fromTo('#time2', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
+gsap.fromTo('#time3', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
 
 function order1_click()
 {
@@ -54,7 +56,8 @@ function order1_click()
             orders[0] = foods[rand][0];
             document.getElementById('order1').src = 'image/' + foods[rand][1];
 
-            gsap.fromTo('#time1', {width: 155}, {width: 0, duration: 10, ease: 'none'});
+            max_time -= 0.25;
+            gsap.fromTo('#time1', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
             gsap.fromTo('#btn1', {opacity: 0.5}, {opacity: 1, duration: 0.25});
         }, 250);
     }
@@ -83,7 +86,8 @@ function order2_click()
             orders[1] = foods[rand][0];
             document.getElementById('order2').src = 'image/' + foods[rand][1];
 
-            gsap.fromTo('#time2', {width: 155}, {width: 0, duration: 10, ease: 'none'});
+            max_time -= 0.25;
+            gsap.fromTo('#time2', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
             gsap.fromTo('#btn2', {opacity: 0.5}, {opacity: 1, duration: 0.25});
         }, 250);
     }
@@ -112,7 +116,8 @@ function order3_click()
             orders[2] = foods[rand][0];
             document.getElementById('order3').src = 'image/' + foods[rand][1];
 
-            gsap.fromTo('#time3', {width: 155}, {width: 0, duration: 10, ease: 'none'});
+            max_time -= 0.25;
+            gsap.fromTo('#time3', {width: 155}, {width: 0, duration: max_time, ease: 'none'});
             gsap.fromTo('#btn3', {opacity: 0.5}, {opacity: 1, duration: 0.25});
         }, 250);
     }
