@@ -36,6 +36,7 @@ img{
     position: absolute;
     text-align: center;
     display: none;
+    z-index: 5;
 }
 
 .orders{
